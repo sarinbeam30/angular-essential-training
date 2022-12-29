@@ -7,7 +7,7 @@
 
 <h2>{{ mediaItem.name }}</h2>
 <ng-template [ngIf]="mediaItem.watchedOn">
-  <div class="watch-on-class">Watched On {{ mediaItem.watchedOn }}</div>
+  <div class="watch-on">Watched On {{ mediaItem.watchedOn | date: 'shortDate' }}</div>
 </ng-template>
 
 <div>{{ mediaItem.category }}</div>
