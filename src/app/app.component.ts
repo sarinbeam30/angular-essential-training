@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'mw-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   firstMediaItem = {
@@ -12,7 +12,7 @@ export class AppComponent {
     medium: 'Series',
     category: 'Science Fiction',
     year: 2010,
-    watchedOn: 1294166565384,
+    watchedOn: 12345666,
     isFavorite: false
   };
 

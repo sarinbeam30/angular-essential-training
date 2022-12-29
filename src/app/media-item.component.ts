@@ -1,27 +1,26 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: 'mw-medium-item',
+  selector: 'mw-media-item',
   templateUrl: './media-item.component.html',
-  styleUrls: ['./media-item.component.less']
+  styleUrls: ['./media-item.component.css']
 })
 
 export class MediaItemComponent {
-  name = 'The Redemption';
 
   wasWatched() {
     return true;
   }
 
-  @Input() mediumItem;
+  @Input() mediaItem;
   @Output() delete = new EventEmitter();
 
   ngOnInit() {
-    console.log(this.mediumItem)
+    console.log(this.mediaItem)
   }
 
   onDelete() {
     console.log('deleted');
-    this.delete.emit(this.mediumItem);
+    this.delete.emit(this.mediaItem);
   }
 }
