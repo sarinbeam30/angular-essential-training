@@ -16,7 +16,7 @@ export class MediaItemComponent {
   @Output() delete = new EventEmitter();
 
   ngOnInit() {
-    console.log(this.mediaItem)
+    // console.log(`[media-item-components]`, this.mediaItem)
   }
 
   onDelete() {
