@@ -10,7 +10,7 @@
   <div class="watch-on">Watched On {{ mediaItem.watchedOn | date: 'shortDate' }}</div>
 </ng-template>
 
-<div>{{ mediaItem.category }}</div>
+<div class="label">{{ mediaItem.category }}</div>
 <div>{{ mediaItem.year }}</div>
 <div class="tools">
   <svg [mwFavorite]="mediaItem.isFavorite"
