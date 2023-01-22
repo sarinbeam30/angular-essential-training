@@ -1,7 +1,10 @@
+<header
+  [ngClass]="{'medium-movies': medium === 'Movies', 'medium-series': medium === 'Series'}">
+  <h2>{{ medium }}</h2>
+  <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
+</header>
+
 <section class="media-item-list-container">
-  <header>
-    <div class="media-item-header">{{ mediaItems | categoryList }}</div>
-  </header>
   <div class="media-item-container">
     <mw-media-item
       [ngClass]="{'media-movies': mediaItem.medium === 'Movies', 'media-series': mediaItem.medium === 'Series'}"
@@ -11,3 +14,9 @@
     </mw-media-item>
   </div>
 </section>
+
+<footer>
+  <a routerLink="/add">
+    <img src="assets/01.png" class="icon">
+  </a>
+</footer>
